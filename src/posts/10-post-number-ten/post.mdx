@@ -1,0 +1,91 @@
+---
+title: Gatsby tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2021-04-06
+author: john smith
+category: gatsby
+readTime: 34
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../../components/Complete'
+
+<section className="mdx-page">
+
+## my halloween
+
+**I'm baby succulents XOXO man bun, thundercats taiyaki snackwave lumbersexual.**
+Pour-over retro sriracha synth. Thundercats farm-to-table scenester la croix cred pabst skateboard.
+_Succulents thundercats XOXO selfies gastropub._ Paleo echo park adaptogen pabst next level asymmetrical humblebrag church-key hammock literally. Vegan brunch tofu drinking vinegar direct trade chia typewriter cray vexillologist bitters microdosing mixtape 90's cliche wayfarers. Occupy 90's snackwave flannel hell of vape.
+
+# my heading
+
+1. flipa
+2. felipa
+
+- sense ordre:
+
+2. second
+3. third
+
+<div className="code">
+
+```js
+{const flipa= felipa()=>{jamoncetetes=jamoncillos+1}}
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon" />
+
+Small batch shoreditch chartreuse ennui chambray. Umami tofu direct trade af. Pug literally blog quinoa kinfolk austin blue bottle hoodie trust fund. Pickled jianbing salvia pug cold-pressed. Jianbing lumbersexual chambray scenester raw denim gentrify. Knausgaard adaptogen offal heirloom keffiyeh, chicharrones sartorial authentic polaroid. Farm-to-table pitchfork plaid kogi narwhal ethical skateboard actually ennui bushwick unicorn DIY.
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```
+import React from 'react'
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import { graphql } from 'gatsby'
+import Posts from '../components/Posts'
+// ...GatsbyImageSharpFluid
+const PostsPage = ({ data }) => {
+  return (
+    <Layout>
+      <Hero />
+    </Layout>
+  )
+}
+
+export default PostsPage
+
+```
+
+<LikeButton />
+
+<h2>video components</h2>
+
+<RegVideo />
+
+<div>
+    helloo pupi
+
+</div>
+
+<Video />
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
+</section>
